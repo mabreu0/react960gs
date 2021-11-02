@@ -1,10 +1,10 @@
 import "./header.css";
+import Menu from "../menu/Menu.js";
 
 const Header = (props) => {
   return (
     <div id="header_main" className={props.grids}>
-      <h2>Missing 001!</h2>
-
+			<Menu />
     </div>
   );
 }
