@@ -1,15 +1,12 @@
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
+import ClientRegForm from "./app/clientreg/ClientRegForm.js"
+import { BrowserRouter } from 'react-router-dom'
 
-//import ClientRegForm from "./app/clientreg/ClientRegForm.js"
-const Container_960_12 = (props) => {
+const Container96012 = (props) => {
   return (
-    <div id="container960" className={props.expandValue}>
-      <Header grids="grid_12"/>
-      
-      <Footer grids="grid_8 push_2"/>
-    </div>
-  );
+    <div id="container960" className={props.expandValue} />
+ );
 }
 
-export default Container_960_12;
+export default Container96012;

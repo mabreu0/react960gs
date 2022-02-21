@@ -1,5 +1,6 @@
 import "./mainMenu.css";
-
+import { Link } from 'react-router-dom';
+import Container96012 from "../Container";
 
 const MainMenu = (props) => {
     return(
@@ -7,34 +8,26 @@ const MainMenu = (props) => {
             <nav>
                 <ul className="primary">
                     <li>
-                        <a href="">Dog</a>
+                       <a href="/">Home</a>
 
                         <ul className="sub">
-                            <li><a href="">Bulldog</a></li>
-                            <li><a href="">Mastiff</a></li>
-                            <li><a href="">Labrador</a></li>
-                            <li><a href="">Mutt</a></li>
+                            <li><a href="/bulldog">Bulldog</a></li>
+                            <li><a href="/mastiff">Mastiff</a></li>
+                            <li><a href="/mutt">Mutt</a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="">Cat</a>
+                        <Link to="/software">Software</Link>
 
                         <ul className="sub">
-                            <li><a href="">Tabby</a></li>
-                            <li><a href="">Black Cat</a></li>
-                            <li><a href="">Wrinkly Cat</a></li>
+                            <li><a href="/lobbi">Lobbier</a></li>
+                            <li><a href="/inhouse">inHouse</a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="">Fox</a>
-
-                        <ul className="sub">
-                            <li><a href="">Tabby</a></li>
-                            <li><a href="">Black Cat</a></li>
-                            <li><a href="">Wrinkly Cat</a></li>
-                        </ul>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </nav>
