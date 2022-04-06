@@ -1,5 +1,6 @@
-import { useState } from "react"
-import "./contact.css"
+import React from 'react';
+import { useState } from "react";
+import "./contact.css";
 
 const chandler = (event) => {
     if(event) {

@@ -1,3 +1,4 @@
+import React from 'react';
 import "./header.css";
 import MainMenu from "../nav/MainMenu.js";
 
