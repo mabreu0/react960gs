@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './components/960web/css/min/960_12_col.css';
 import Container96012 from './components/Container';
 
 
 function App() {
-  return (
-     <div className="App">
-      <Container96012 expandValue="container_12" />
-      </div> 
+	return (
+     	<div className="App">
+     		<Container96012 expandValue="container_12" />
+		</div> 
   );
 };
 
