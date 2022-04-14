@@ -5,8 +5,6 @@ import App from './App';
 import { unmountComponentAtNode } from 'react-dom';
 import { act } from "react-dom/test-utils";
 
-//global.React = React;
-
 let container = null;
 beforeEach(() => {
   // setup a DOM element as a render target
@@ -21,22 +19,9 @@ afterEach(() => {
   container = null;
 });
 
-it("renders with or without a name", () => {
+test("renders with or without a name", () => {
   act(() => {
-    render(<App />, container);
+    render(<App data-testid="app" />, container);
   });
 
-//test('learn react tests jest', () => {
-  //render(<App />);
-  //const linkElement = screen.getByText(/container960/i);
-  //const linkElement = screen.getByRole('div', { id: /container960/i });
-
-  //const linkElement = screen.getByText(/container960/i);
-
-  //const linkElement = screen.getByText('container960');
-
-  //const linkElement = screen.queryAllByText('container960');
-  //console.log("############################");
-  //console.log(linkElement);
- // console.log("############################");
 });
