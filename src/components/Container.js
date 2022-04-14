@@ -1,28 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
-import ContactForm from "../pages/contact/ContactForm";
 import Home from "../pages/home/Home";
+import ContactForm from "../pages/contact/ContactForm";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-//valid grids
-const grids = [
-  "container_12", 
-  "container_16", 
-  "container_24"
-];
+import PropTypes from 'prop-types';
 
 const Container96012 = (props) => {
-  const err_message = `Can't build UI as 960gs provided value not valid.. Valids :: ${grids}`;
-
-  if(grids.includes(props.expandValue) === false) {
-    throw Error(err_message);
-  }
 
   return (
     <BrowserRouter>
-      <div id="container960" className={props.expandValue} >
+      <div id="container960" data-testid="container_gs960" className={props.expandValue} >
+
         <Header />
 
         <Routes>
@@ -34,6 +24,9 @@ const Container96012 = (props) => {
         </div>
       </BrowserRouter>
   );
+}
+Container96012.propTypes = {
+  expandValue: PropTypes.string
 }
 
 export default Container96012;
