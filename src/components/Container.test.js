@@ -4,8 +4,7 @@ import { unmountComponentAtNode } from 'react-dom';
 import { act } from "react-dom/test-utils";
 import Container96012 from './Container';
 
-//global.React = React;
-
+//Isolate logic needed for isolated component tests (not units)
 let container = null;
 beforeEach(() => {
   // setup a DOM element as a render target
