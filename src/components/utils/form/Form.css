@@ -1,0 +1,39 @@
+  input[type=number] {
+    padding: 12px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    position: relative;
+    float : right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  label {
+    display: block;
+    position : relative;
+  }
+  
+  /* Style the container/contact section */
+  .formdiv {
+    border-radius: 12px;
+    background-color: #f2f2f2;
+  }
+
+  label {
+    padding : 10px;
+  }
+  
+
+  /* Clear floats after the columns 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }*/

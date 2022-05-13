@@ -14,9 +14,9 @@ const chandler = (event) => {
 };
 
 const ContactForm = (props) => {
-    const [name, updateName] = useState("");
-    const [email, updateEmail] = useState("");
-    const [msg, updateMessage] = useState("");
+    const [name, updateName] = useState("Nombre");
+    const [email, updateEmail] = useState("Email");
+    const [msg, updateMessage] = useState("Mensaje");
 
     return (
         <div className="formdiv row">

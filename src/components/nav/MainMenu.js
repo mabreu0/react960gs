@@ -16,15 +16,18 @@ const MainMenu = (props) => {
 
                     <li>
                         <Link to="/software">Software</Link>
+                    </li>
 
-                        <ul className="sub">
-                            <li><a href="/lobbi">Lobbier</a></li>
-                            <li><a href="/inhouse">inHouse</a></li>
-                        </ul>
+                    <li>
+                        <Link to="/cotizar">Cotizar</Link>
                     </li>
 
                     <li>
                         <Link to="/contact">Contact</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/admin/prices">Admin</Link>
                     </li>
                 </ul>
             </nav>
